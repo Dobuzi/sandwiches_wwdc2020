@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D62B9D4252939EB000E63DD /* SandwichDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62B9D3252939EB000E63DD /* SandwichDetail.swift */; };
+		4D62B9E025296273000E63DD /* SandwichStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62B9DF25296273000E63DD /* SandwichStore.swift */; };
 		4DD32388252932D80096465E /* SandwichesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD32387252932D80096465E /* SandwichesApp.swift */; };
 		4DD3238A252932D80096465E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD32389252932D80096465E /* ContentView.swift */; };
 		4DD3238C252932D80096465E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD3238B252932D80096465E /* Assets.xcassets */; };
 		4DD3238F252932D80096465E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD3238E252932D80096465E /* Preview Assets.xcassets */; };
 		4DD3239A252932D80096465E /* SandwichesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD32399252932D80096465E /* SandwichesTests.swift */; };
 		4DD323A5252932D80096465E /* SandwichesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD323A4252932D80096465E /* SandwichesUITests.swift */; };
+		4DD323B6252934180096465E /* Sandwich.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD323B5252934180096465E /* Sandwich.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D62B9D3252939EB000E63DD /* SandwichDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandwichDetail.swift; sourceTree = "<group>"; };
+		4D62B9D8252960DA000E63DD /* Sandwiches.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sandwiches.entitlements; sourceTree = "<group>"; };
+		4D62B9DF25296273000E63DD /* SandwichStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandwichStore.swift; sourceTree = "<group>"; };
 		4DD32384252932D80096465E /* Sandwiches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandwiches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD32387252932D80096465E /* SandwichesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandwichesApp.swift; sourceTree = "<group>"; };
 		4DD32389252932D80096465E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +51,7 @@
 		4DD323A0252932D80096465E /* SandwichesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandwichesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD323A4252932D80096465E /* SandwichesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandwichesUITests.swift; sourceTree = "<group>"; };
 		4DD323A6252932D80096465E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD323B5252934180096465E /* Sandwich.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sandwich.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +102,10 @@
 		4DD32386252932D80096465E /* Sandwiches */ = {
 			isa = PBXGroup;
 			children = (
-				4DD32387252932D80096465E /* SandwichesApp.swift */,
-				4DD32389252932D80096465E /* ContentView.swift */,
+				4D62B9D8252960DA000E63DD /* Sandwiches.entitlements */,
+				4DD323BC2529346D0096465E /* App */,
+				4DD323BB252934620096465E /* View */,
+				4DD323BA252934580096465E /* Model */,
 				4DD3238B252932D80096465E /* Assets.xcassets */,
 				4DD32390252932D80096465E /* Info.plist */,
 				4DD3238D252932D80096465E /* Preview Content */,
@@ -128,6 +137,32 @@
 				4DD323A6252932D80096465E /* Info.plist */,
 			);
 			path = SandwichesUITests;
+			sourceTree = "<group>";
+		};
+		4DD323BA252934580096465E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DD323B5252934180096465E /* Sandwich.swift */,
+				4D62B9DF25296273000E63DD /* SandwichStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DD323BB252934620096465E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DD32389252932D80096465E /* ContentView.swift */,
+				4D62B9D3252939EB000E63DD /* SandwichDetail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DD323BC2529346D0096465E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4DD32387252932D80096465E /* SandwichesApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D62B9E025296273000E63DD /* SandwichStore.swift in Sources */,
 				4DD3238A252932D80096465E /* ContentView.swift in Sources */,
 				4DD32388252932D80096465E /* SandwichesApp.swift in Sources */,
+				4DD323B6252934180096465E /* Sandwich.swift in Sources */,
+				4D62B9D4252939EB000E63DD /* SandwichDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sandwiches/Sandwiches.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Sandwiches/Preview Content\"";
 				DEVELOPMENT_TEAM = 7J7R843574;
@@ -429,6 +468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Dobuzi.Sandwiches;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sandwiches/Sandwiches.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Sandwiches/Preview Content\"";
 				DEVELOPMENT_TEAM = 7J7R843574;
@@ -451,6 +492,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Dobuzi.Sandwiches;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
